@@ -1,0 +1,62 @@
+!urxvt
+URxvt*iso14755_52:False
+URxvt*buffered: true
+URxvt*cursorBlink: false 
+URxvt*underlineColor: yellow
+URxvt*font:  xft:Source Code Pro Medium:size=12:antialias=true
+URxvt*boldFont:  xft:Source Code Pro Medium:bold:size=12:antialias=true
+URxvt*depth: 32
+URxvt*borderless: 1
+URxvt*scrollBar: false
+URxvt*loginShell: true
+Urxvt*secondaryScroll:  true    # Enable Shift-PageUp/Down in screen
+URxvt*saveLines: 5000
+URxvt.perl-ext-common: default,matcher
+URxvt.urlLauncher: firefox 
+URxvt.intensityStyles: false
+URxvt.matcher.button: 1
+URxvt*termName: rxvt-unicode-256 
+!URxvt.background: [100]#222241
+!URxvt*background: rgba:2200/2200/4100/ee00
+!URxvt*.transparent: true
+!URxvt*.shading: 150 
+
+! Hmm
+! special
+*.foreground: #f3f3f3
+URxvt*background: #524769
+*.cursorColor: #e9e6e6
+
+! black
+*.color0: #222222
+*.color8: #5b595a
+
+! red
+*.color1: #8f5b5b
+*.color9: #cf7275
+
+! green
+*.color2: #758763
+*.color10: #9ebf7c
+
+! yellow 
+*.color3: #c59f6f
+*.color11: #edc472
+
+! blue
+*.color4: #70819e
+*.color12: #94aad1
+
+! magenta
+*.color5: #947686
+*.color13: #c98dad
+
+! cyan
+*.color6: #688f8a
+*.color14: #8ab4be
+
+! white
+*.color7: #a49c9c
+*.color15: #e9e6e6
+
+URxvt.colorUL: #cf7275
