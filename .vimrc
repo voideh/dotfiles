@@ -1,9 +1,18 @@
-autocmd!
-execute pathogen#infect()
-call pathogen#helptags()
 """""""""""""""""""""""""""
 "" Basic Settings
 """"""""""""""""""""""""""""
+"" Vundle
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-commentary'
+call vundle#end()
+"" Done
+filetype plugin indent on
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor='latex'
 syntax on " syntax highlighting
@@ -35,7 +44,6 @@ set nobackup
 set backspace=indent,eol,start
 " display incomplete commands
 set showcmd
-filetype plugin indent on
 " wildmode settings
 set wildmode=list:longest,full
 set wildmenu
