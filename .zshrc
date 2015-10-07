@@ -7,7 +7,7 @@ export ZSH=/home/jake/.oh-my-zsh
 # time that oh-my-zsh is loaded.
 ZSH_THEME="dieter"
 TERM="xterm-256color"
-
+EDITOR="vim"
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -73,3 +73,9 @@ alias euler="cd ~/code/euler/"
 alias code="cd ~/code/"
 alias school="cd ~/code/school_code/"
 alias reskin="xrdb ~/.Xresources"
+alias homewifi="sudo netctl start wlp3s0-dd-wrt"
+alias fiuwifi="sudo netctl start wlp3s0-FIU_WiFi"
+
+# BG alias
+alias notembarassing="feh --randomize --bg-fill ~/.bg/*.*"
+alias weeb="feh --randomize --bg-fill ~/.bg/a/*"

@@ -1,10 +1,11 @@
 !urxvt
+URxvt*iso14755:False
 URxvt*iso14755_52:False
 URxvt*buffered: true
 URxvt*cursorBlink: false 
 URxvt*underlineColor: yellow
-URxvt*font:  xft:Source Code Pro Medium:size=12:antialias=true
-URxvt*boldFont:  xft:Source Code Pro Medium:bold:size=12:antialias=true
+URxvt*font:  xft:Monaco:bold:size=10:antialias=true
+URxvt*boldFont:  xft:Monaco:bold:size=10:antialias=true
 URxvt*depth: 32
 URxvt*borderless: 1
 URxvt*scrollBar: false
@@ -16,7 +17,7 @@ URxvt.urlLauncher: firefox
 URxvt.intensityStyles: false
 URxvt.matcher.button: 1
 URxvt*termName: rxvt-unicode-256 
-!URxvt.background: [100]#222241
+!URxvt*background: [85]#524769
 !URxvt*background: rgba:2200/2200/4100/ee00
 !URxvt*.transparent: true
 !URxvt*.shading: 150 
@@ -24,7 +25,7 @@ URxvt*termName: rxvt-unicode-256
 ! Hmm
 ! special
 *.foreground: #f3f3f3
-URxvt*background: #524769
+*.background: #524769
 *.cursorColor: #e9e6e6
 
 ! black
@@ -36,7 +37,7 @@ URxvt*background: #524769
 *.color9: #cf7275
 
 ! green
-*.color2: #758763
+*.color2: #8ca679
 *.color10: #9ebf7c
 
 ! yellow 
@@ -60,3 +61,9 @@ URxvt*background: #524769
 *.color15: #e9e6e6
 
 URxvt.colorUL: #cf7275
+
+! Rofi
+rofi.opacity: 80
+rofi.width: 50
+rofi.lines: 5
+rofi.font: Source Code Pro 10
