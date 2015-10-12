@@ -10,6 +10,9 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-commentary'
+Plugin 'tpope/vim-haml'
+Plugin 'vim-scripts/haskell.vim'
+Plugin 'mattn/emmet-vim'
 call vundle#end()
 "" Done
 filetype plugin indent on
@@ -21,9 +24,10 @@ set nocompatible "remove vi compatibility
 set hidden " allow saving and stuff of hidden buffers
 set history=10000 " remember more commands
 set expandtab  " use spaces not tab characters
-set tabstop=2 " indent to 4 spaces
-set shiftwidth=2 
-set softtabstop=2
+set tabstop=8 " indent to 4 spaces
+set shiftwidth=4
+set softtabstop=4
+set shiftround
 set autoindent
 set laststatus=2
 set showmatch

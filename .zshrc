@@ -79,3 +79,5 @@ alias fiuwifi="sudo netctl start wlp3s0-FIU_WiFi"
 # BG alias
 alias notembarassing="feh --randomize --bg-fill ~/.bg/*.*"
 alias weeb="feh --randomize --bg-fill ~/.bg/a/*"
+alias vgaout="sh ~/.bin/outs.sh"
+alias startweb="systemctl start httpd.service"

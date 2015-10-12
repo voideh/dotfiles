@@ -87,10 +87,10 @@ bindsym $mod+a focus parent
 #bindsym $mod+d focus child
 
 # switch to workspace
-bindsym $mod+1 workspace Main
-bindsym $mod+2 workspace Development
-bindsym $mod+3 workspace Media 
-bindsym $mod+4 workspace Misc
+bindsym $mod+1 workspace "Main"
+bindsym $mod+2 workspace "Development"
+bindsym $mod+3 workspace "WWW"
+bindsym $mod+4 workspace 4
 bindsym $mod+5 workspace 5
 bindsym $mod+6 workspace 6
 bindsym $mod+7 workspace 7
@@ -99,10 +99,10 @@ bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
 # move focused container to workspace
-bindsym $mod+Shift+1 move container to workspace Main
-bindsym $mod+Shift+2 move container to workspace Development
-bindsym $mod+Shift+3 move container to workspace Media 
-bindsym $mod+Shift+4 move container to workspace Misc 
+bindsym $mod+Shift+1 move container to workspace "Main"
+bindsym $mod+Shift+2 move container to workspace "Development"
+bindsym $mod+Shift+3 move container to workspace "WWW"
+bindsym $mod+Shift+4 move container to workspace 4 
 bindsym $mod+Shift+5 move container to workspace 5
 bindsym $mod+Shift+6 move container to workspace 6
 bindsym $mod+Shift+7 move container to workspace 7
@@ -110,6 +110,11 @@ bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
 
+# multiple monitors
+workspace "Main" output LVDS1
+workspace "Development" output LVDS1
+workspace "WWW" output LVDS1
+workspace 10 output VGA1
 
 bindsym $mod+shift+minus move scratchpad
 bindsym $mod+minus scratchpad show
@@ -151,23 +156,19 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
       colors { 
-        background #1b1b1b
+        background #2c2645
         statusline #e9e6e6
         separator #ffffff
         # type           border   background font
         focused_workspace #87353d #87353d  #e9e6e6
-        inactive_workspace #1b1b1b #1b1b1b #e9e6e6      }
+        inactive_workspace #2c2645 #2c2645 #e9e6e6 
+        }
         position top
         status_command i3status
-}
+    font xft:Monaco 9.5
+  }
 
 #class border bckgr text indicator
-
-# bar {
-#   status_command i3blocks
-#   position top
-# }
-
 client.background #1b1b1b
 client.focused #87353d  #87353d #ffffff #58c6a6
 client.focused_inactive #1d1f21 #1d1f21 #c5c8c6
@@ -179,8 +180,8 @@ focus_follows_mouse no
 
 # Experimental stuff
 # border
-for_window [class="^.*"] border pixel 3
+for_window [class="^.*"] border pixel 4
 
 # gaps
-gaps inner 8
+gaps inner 7
 smart_borders no_gaps
